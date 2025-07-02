@@ -31,16 +31,14 @@ func Divide(a, b float64) (float64, error) {
 	// TODO: Implement this function
 	if b == 0 {
 		return 0, ErrDivisionByZero
-	} else {
-		return a / b, nil
 	}
+	return a / b, nil
 }
 
 // StringToFloat converts a string to float64
 func StringToFloat(s string) (float64, error) {
 	// TODO: Implement this function
-	strconv.ParseFloat(s, 64)
-	return 0, nil
+	return strconv.ParseFloat(s, 64)
 }
 
 // FloatToString converts a float64 to string with specified precision
